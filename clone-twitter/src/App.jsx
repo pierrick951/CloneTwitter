@@ -1,12 +1,18 @@
-import { useState } from 'react'
+
+import Main from './Components/MainContent/MainContent'
+import Nav from './Components/Nav/Nav'
+import RigthSide from './Components/RitghSide/RigthSide'
+
 import './App.css'
 
-
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div>
+    <div className='appContainer'>
+      <Nav/>
+      <Main/>
+      <RigthSide/>
 
    
     </div>

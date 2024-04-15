@@ -1,0 +1,25 @@
+.NavContainer { 
+       width: 30%;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: end;
+   
+
+}
+
+
+.containerLinks{
+       width: 300px;
+       position: fixed;
+       
+}
+.topContainer {
+       background-color: blueviolet;
+}
+
+
+.botContainer {
+       background-color: goldenrod;
+}

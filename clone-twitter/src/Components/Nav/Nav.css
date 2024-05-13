@@ -9,6 +9,7 @@ nav {
     width: 15%;
     flex-shrink: 0;
     overflow: hidden;
+    align-items: center;
 }
 
 /* Style du logo  */
@@ -38,3 +39,4 @@ nav {
 .navLinks__link{
     text-decoration: none;
 }
+

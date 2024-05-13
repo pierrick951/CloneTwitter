@@ -1,9 +1,40 @@
+
+/* style Global de la nav */
 nav {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     display: flex;
     flex-direction: column;
     height: auto;
     position: fixed;
     width: 15%;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* Style du logo  */
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding-block: 8px;
+    
+}
+.containerHeader_img{
+    width: 25px;
+   
+}
+.containerHeader_img:hover{
+    background-color: rgba(41, 41, 41, 0.445);
+    border-radius: 50%;
+    width: 26px;
+    padding: 3px;
+}
+.linkHeader{
+    text-decoration: none;
+}
+
+/* Style pour les Links */
+.navLinks__link{
+    text-decoration: none;
 }

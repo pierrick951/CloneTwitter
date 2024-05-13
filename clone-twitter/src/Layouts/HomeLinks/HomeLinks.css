@@ -1,0 +1,17 @@
+.containerLinks{
+    width: 100%;
+    background-color: red;
+    padding-block: 10px;
+
+    & p {
+        display: flex;
+        align-items: center;
+        font-family: Karla;
+      & span {
+        padding-inline: 10px;
+        color: #f1f1f1;
+      }
+ 
+    }
+
+}

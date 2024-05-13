@@ -1,16 +1,15 @@
+import { Link } from "react-router-dom"
 import './Nav.css'
-
-
 export default function Nav() {
   return (
-    <div className='NavContainer'>
-      <div className="containerLinks">
-        <div className='topContainer'>4255</div>
-        <div className='botContainer'>5</div>
+    <nav>
+      <div className="containerHeader">
+        <h1>
+          <a className='linkHeader' href="/home">
+            X
+          </a>
+        </h1>
       </div>
-
-
-    </div>
-
+    </nav>
   )
 }

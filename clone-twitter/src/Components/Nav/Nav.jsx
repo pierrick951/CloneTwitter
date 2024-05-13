@@ -18,6 +18,7 @@ export default function Nav() {
         <Link  className='navLinks__link' to='/'>
           <HomeLink/>
         </Link>
+ 
       </div>
     </nav>
   )

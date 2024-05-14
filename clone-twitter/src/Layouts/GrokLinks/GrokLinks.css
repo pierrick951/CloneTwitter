@@ -1,0 +1,35 @@
+.containerLinks{
+    width: 100%;
+    padding-block: 10px;
+
+    & p {
+        display: flex;
+        align-items: center;
+        font-family: Karla;
+        padding-inline: 5px;
+        padding-block: 5px;
+        width: auto;
+      & span {
+        padding-inline: 10px;
+        color: #f1f1f1;
+      }
+ 
+    }
+
+}
+.containerLinks p:hover {
+    background-color: rgba(61, 58, 58, 0.89);
+    border-radius: 50px; 
+   
+}
+
+@media (max-width:900px){
+    .containerLinks p {
+   
+
+        & span {
+            display: none;
+        }
+    }
+     
+}

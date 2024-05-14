@@ -25,3 +25,25 @@
     background-color: green;
     position: relative;
 }
+
+
+@media (max-width:768px){
+    .three{
+        display: none;
+    }
+    .two {
+        width: 80%;
+    }
+    .one {
+        width: 20%;
+    }
+}
+
+@media (max-width:470px){
+    .one {
+        display: none;
+    }
+    .two {
+        width: 100%;
+    }
+}

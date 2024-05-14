@@ -13,16 +13,10 @@ nav {
 }
 
 /* Style du logo  */
-.containerHeader{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    padding-block: 8px;
-    
-}
+
 .containerHeader_img{
     width: 25px;
+    padding-top: 10px;
    
 }
 .containerHeader_img:hover{

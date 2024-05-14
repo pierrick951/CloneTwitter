@@ -1,10 +1,9 @@
 
 /* style Global de la nav */
 nav {
-    /* background-color: greenyellow; */
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     position: fixed;
     width: 15%;
     flex-shrink: 0;
@@ -32,5 +31,6 @@ nav {
 /* Style pour les Links */
 .navLinks__link{
     text-decoration: none;
+    font-size:16px;
 }
 

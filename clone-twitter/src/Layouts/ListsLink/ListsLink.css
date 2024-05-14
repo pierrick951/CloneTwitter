@@ -1,12 +1,13 @@
 .containerLinks{
     width: 100%;
-    height: 40px;
+    padding-block: 10px;
 
     & p {
         display: flex;
         align-items: center;
         font-family: Karla;
         padding-inline: 5px;
+        padding-block: 5px;
         width: auto;
       & span {
         padding-inline: 10px;
@@ -17,8 +18,8 @@
 
 }
 .containerLinks p:hover {
-    background-color: rgba(61, 58, 58, 0.89); /* Fond transparent avec opacité */
-    border-radius: 50px; /* Bord arrondi */
+    background-color: rgba(61, 58, 58, 0.89);
+    border-radius: 50px; 
    
 }
 

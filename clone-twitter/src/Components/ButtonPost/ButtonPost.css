@@ -1,0 +1,36 @@
+.buttonPost {
+
+ margin-top: 10px;
+ background-color:  #1D9BF0;
+ color: white;
+ border: none;
+ width: 100%;
+ padding-block: 10px;
+ padding-inline: 15px;
+ border-radius: 35px;
+ font-weight: bold;
+ cursor: pointer;
+
+ & img {
+    display: none;
+ }
+
+}
+
+.buttonPost:hover {
+    background-color:  #1772af;
+}
+
+@media (max-width:900px){
+    .buttonPost{
+        padding: 10px;
+        & img {
+            display: block;
+        }
+        & p {
+            display: none;
+        }
+    }
+}
+
+

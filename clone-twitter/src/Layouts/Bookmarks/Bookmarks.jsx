@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Base from '../../assets/grok.svg'
-import Active from '../../assets/grokAction.svg'
-import './GrokLinks.css'
+import Base from '../../assets/save.svg'
+import Active from '../../assets/saveActive.svg'
+
 
 export default function HomeLinK() {
     const [activeLinks, setActiveLinks] = useState(false)
@@ -20,7 +20,7 @@ export default function HomeLinK() {
         <div className='containerLinks'>
             <p onClick={() => HandleActive() }>
                 <img src={activeLinks ? Active : Base} alt="Home Icon" />
-                <span>Grok</span>
+                <span>Bookmarks</span>
             </p>
         </div>
     )

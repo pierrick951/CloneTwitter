@@ -11,3 +11,13 @@ body {
   background-color: rgb(0, 0, 0);
   color: rgb(239, 243, 244);
 }
+
+
+:root{
+  --color-twiblue: #1D9BF0;
+  --color-dark-twiblue: #126094;
+
+  
+  /* Fonts */
+  --Karla: Karla;
+}

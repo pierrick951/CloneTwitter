@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
+import {createPortal} from "react-dom"
 import HomeLink from "../../Layouts/HomeLinks/HomeLinks"
 import SearchLink from '../../Layouts/SearchLink/SearchLink'
 import NotificationLink from "../../Layouts/Notifications/Notifications"
@@ -10,10 +12,15 @@ import Communites from '../../Layouts/CommunityLink/CommunityLink'
 import User from '../../Layouts/ProfilLinks/ProfilLinks'
 import Prenium from '../../Layouts/PreniumLinks/PreniumLinks'
 import More from '../../Layouts/MoreLinks/MoreLinks'
-import ButtonPost from '../../Components/ButtonPost/ButtonPost'
+import NewPost from '../../assets/writePost.svg'
+import ModalPost from '../../Components/ModalPost/ModalPost'
 import X from '../../assets/xlogo.png'
 import './Nav.css'
 export default function Nav() {
+  const [showModal, setShowModal] = useState(false)
+
+
+
   return (
     <nav>
       <div className="navLinks">
@@ -61,10 +68,17 @@ export default function Nav() {
           <More />
         </Link>
         <div>
-          <ButtonPost />
+          <button
+            className="buttonPost"
+            onClick={(() => setShowModal(!showModal))}
+          >
+            <p>Post</p>
+            <img src={NewPost} alt="" />
+          </button>
         </div>
       </div>
-      
+      {showModal && createPortal(<ModalPost closemodal={() => setShowModal(!showModal)}/>, document.body)}
+
     </nav>
   )
 }

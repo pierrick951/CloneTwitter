@@ -13,32 +13,101 @@
 .ModalCard {
     margin-top: 40px;
     background-color: black;
-    border-radius: 20px;
-    width: 500px;
-    height: 250px;
+    border-radius: 18px;
+    width: 450px;
+    height: auto;
 }
 .ModalCardTop{
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
-    padding-block:20px;
+    padding-block:15px;
     padding-inline: 20px;
 
     & button {
         border: none;
         background-color: transparent;
         & img {
-            width: 20px;
+            width: 19px;
         }
     }
 
     & p {
         font-family: karla;
         font-weight: bold;
+        font-size: 15px;
         color: #1D9BF0;
+        padding-block: 3px;
+        padding-inline: 10px;
+        border-radius: 30%;
+        cursor: pointer;
+        width: auto;
     }
   
 }
+.ModalCardText{
+    display: flex;
+    flex-direction: row();
+    padding-block: 20px;
+    margin-left: 10px;
+    height: 100px;
+    & img{
+        width:30px;
+        height:30px ;
+        border-radius: 50%;
+
+    }
+
+    & textarea {
+        width: 100%;
+        height: 70px;
+        resize: none; 
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-family: Karla;
+        font-size: 15px;
+        color: white;
+        padding-right: 20px;
+        overflow: scroll;
+    }
+}
+.ModalCardTop p:hover {
+    background-color: #89c7f142;
+}
+
+.modalImg{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+
+/*style undertext textarea*/
+.topbox{
+    padding-inline: 20px;
+    & p {
+        font-size: 15px;
+        padding-bottom: 20px;
+        color: #1D9BF0;
+        font-family: Karla;
+        display: flex;
+        align-items: center;
+        & img {
+            width: 15px;
+        }
+        & span {
+            padding-inline: 5px;
+        }
+    }
+}
+
+
+
+
+
+/*Media queries*/
 
 @media (max-width:600px) {
     .ModalCard {

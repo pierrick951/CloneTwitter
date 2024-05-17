@@ -43,7 +43,9 @@ export default function ModalPost({ closemodal }) {
           </div>
           <div className='botbox'>
             <ModalIcoPost/>
+            <button>Post</button>
           </div>
+          
         </div>
       </div>
 

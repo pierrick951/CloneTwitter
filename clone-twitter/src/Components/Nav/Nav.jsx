@@ -77,6 +77,7 @@ export default function Nav() {
           </button>
         </div>
       </div>
+      <div className="containerbotav"></div>
       {showModal && createPortal(<ModalPost closemodal={() => setShowModal(!showModal)}/>, document.body)}
 
     </nav>

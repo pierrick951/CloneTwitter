@@ -9,6 +9,7 @@ nav {
     flex-shrink: 0;
     overflow: hidden;
     align-items: center;
+    justify-content: space-around;
 }
 
 /* Style du logo  */
@@ -57,7 +58,29 @@ nav {
    .buttonPost:hover {
        background-color:  #1772af;
    }
+
+
+   /*style box userprofile*/
+   .containerbotav{
+
+
+
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+    background-color: red;
+    width: 100%;
+   }
    
+   .botleft{
+        & img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+        }
+   }
    @media (max-width:900px){
        .buttonPost{
            padding: 10px;

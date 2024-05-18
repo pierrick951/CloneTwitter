@@ -14,6 +14,7 @@ import Prenium from '../../Layouts/PreniumLinks/PreniumLinks'
 import More from '../../Layouts/MoreLinks/MoreLinks'
 import NewPost from '../../assets/writePost.svg'
 import ModalPost from '../../Components/ModalPost/ModalPost'
+import japan from '../../assets/japan.jpg'
 import X from '../../assets/xlogo.png'
 import './Nav.css'
 export default function Nav() {
@@ -77,7 +78,15 @@ export default function Nav() {
           </button>
         </div>
       </div>
-      <div className="containerbotav"></div>
+      <div className="containerbotav">
+        <div className="botleft">
+          <img src={japan} alt="" />
+          <div class='boxtext'>
+            <p>Pierro</p>
+            <p>@Etuve.js</p>
+          </div>
+        </div>
+      </div>
       {showModal && createPortal(<ModalPost closemodal={() => setShowModal(!showModal)}/>, document.body)}
 
     </nav>

@@ -9,7 +9,7 @@ nav {
     flex-shrink: 0;
     overflow: hidden;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* Style du logo  */
@@ -37,7 +37,6 @@ nav {
 
 /*button*/
 .buttonPost {
-
     margin-top: 10px;
     background-color:  #1D9BF0;
     color: white;

@@ -15,6 +15,7 @@ import More from '../../Layouts/MoreLinks/MoreLinks'
 import NewPost from '../../assets/writePost.svg'
 import ModalPost from '../../Components/ModalPost/ModalPost'
 import japan from '../../assets/japan.jpg'
+import dot from '../../assets/dot.svg'
 import X from '../../assets/xlogo.png'
 import './Nav.css'
 export default function Nav() {
@@ -86,6 +87,7 @@ export default function Nav() {
             <p>@Etuve.js</p>
           </div>
         </div>
+        <img src={dot} alt="more informations" />
       </div>
       {showModal && createPortal(<ModalPost closemodal={() => setShowModal(!showModal)}/>, document.body)}
 

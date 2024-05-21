@@ -83,11 +83,13 @@ export default function Nav() {
         <div className="botleft">
           <img src={japan} alt="" />
           <div class='boxtext'>
-            <p>Pierro</p>
-            <p>@Etuve.js</p>
+            <p className="username">Pierro</p>
+            <p className="Identifiants">@Etuve.js</p>
           </div>
         </div>
-        <img src={dot} alt="more informations" />
+        <img 
+        className="dot"
+        src={dot} alt="more informations" />
       </div>
       {showModal && createPortal(<ModalPost closemodal={() => setShowModal(!showModal)}/>, document.body)}
 

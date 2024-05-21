@@ -1,4 +1,3 @@
-
 /* style Global de la nav */
 nav {
     display: flex;
@@ -14,31 +13,33 @@ nav {
 
 /* Style du logo  */
 
-.containerHeader_img{
+.containerHeader_img {
     width: 25px;
     padding-top: 10px;
-   
+
 }
-.containerHeader_img:hover{
+
+.containerHeader_img:hover {
     background-color: rgba(41, 41, 41, 0.445);
     border-radius: 50%;
     width: 26px;
     padding: 3px;
 }
-.linkHeader{
+
+.linkHeader {
     text-decoration: none;
 }
 
 /* Style pour les Links */
-.navLinks__link{
+.navLinks__link {
     text-decoration: none;
-    font-size:16px;
+    font-size: 16px;
 }
 
 /*button*/
 .buttonPost {
     margin-top: 10px;
-    background-color:  #1D9BF0;
+    background-color: #1D9BF0;
     color: white;
     border: none;
     width: 100%;
@@ -47,58 +48,89 @@ nav {
     border-radius: 35px;
     font-weight: bold;
     cursor: pointer;
-   
+
     & img {
-       display: none;
+        display: none;
     }
-   
-   }
-   
-   .buttonPost:hover {
-       background-color:  #1772af;
-   }
+
+}
+
+.buttonPost:hover {
+    background-color: #1772af;
+}
 
 
-   /*style box userprofile*/
-   .containerbotav{
-
-
-
-   display: flex;
-   align-items: center;
-   flex-direction: row;
-   justify-content: space-between;
-    background-color: red;
+/*style box userprofile*/
+.containerbotav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     padding-inline: 20px;
     padding-block: 20px;
     width: 100%;
-   }
+}
+
+.boxtext {
+    padding-inline: 10px;
+
+    & p {
+        font-family: Karla;
+    }
+}
+
+.username {
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.Identifiants {
+    color: grey;
+}
 
 
-   
-   .botleft{
+
+.botleft {
     display: flex;
-    background-color: orange;
     align-items: center;
     width: 80%;
+
+    & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+    }
+}
+
+@media (max-width:900px) {
+    .buttonPost {
+        padding: 10px;
+
         & img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-
+            display: block;
         }
-   }
-   @media (max-width:900px){
-       .buttonPost{
-           padding: 10px;
-           & img {
-               display: block;
-           }
-           & p {
-               display: none;
-           }
-       }
-   }
-   
-   
 
+        & p {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width:1400px) {
+   .botleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   }
+
+    .dot {
+        display: none;
+    }
+
+    .boxtext {
+        display: none;
+    }
+}

@@ -47,7 +47,7 @@ export default function Nav() {
         <Link className='navLinks__link' to='/message' >
           <MessagerieLink />
         </Link>
-        <Link className='navLinks__link' to='/grok' >
+        <Link className='navLinks__link' >
           <GrokLinks />
         </Link>
         <Link className='navLinks__link' >
@@ -60,7 +60,7 @@ export default function Nav() {
           <Communites />
         </Link>
 
-        <Link className='navLinks__link' to='/prenium' >
+        <Link className='navLinks__link'  >
           <Prenium />
         </Link>
         <Link className='navLinks__link' to='/userprofile' >
@@ -82,7 +82,7 @@ export default function Nav() {
       <div className="containerbotav">
         <div className="botleft">
           <img src={japan} alt="" />
-          <div class='boxtext'>
+          <div className='boxtext'>
             <p className="username">Pierro</p>
             <p className="Identifiants">@Etuve.js</p>
           </div>

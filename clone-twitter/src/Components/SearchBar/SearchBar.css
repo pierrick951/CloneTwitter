@@ -1,0 +1,41 @@
+.containerBar {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 40vw;
+}
+
+.flexContainer {
+    padding-block: 10px;
+
+    & button {
+        background-color: transparent;
+        border: none;
+    }
+
+    & input {
+        background-color: transparent;
+        border: none;
+        color: gray;
+    }
+
+}
+
+form {
+    background-color: rgb(32, 32, 32);
+    margin-left: 30px;
+    padding-block: 8px;
+    padding-inline: 10px;
+    border-radius: 25px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+    & input {
+        outline: none;
+    }
+}
+
+.imageLoupe {
+    width: 15px;
+    margin-right: 10px;
+}

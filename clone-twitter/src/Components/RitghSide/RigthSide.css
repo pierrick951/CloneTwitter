@@ -1,0 +1,13 @@
+.WrapedContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    background-color: red;
+    width: 100%;
+    margin-top: 60px;
+}
+.containerR{
+    position: fixed;
+    width: 100%;
+}

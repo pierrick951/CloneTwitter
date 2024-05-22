@@ -6,6 +6,9 @@ export default function RigthSide() {
   return (
     <div className='containerR'>
       <SearchBar/>
+      <div className='WrapedContainer'>
+        
+      </div>
     </div>
   )
 }

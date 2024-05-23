@@ -1,8 +1,41 @@
 .boxR {
-    border-radius: 35px;
-    background-color: transparent;
-    border: solid white 2px;
+    border-radius: 15px;
+    width: 300px;
+    border: solid rgba(192, 192, 192, 0.562) 1px;
+    padding-block: 10px;
+    padding-inline: 15px;
     margin-left: 40px;
-    width: 400px;
 
+    & h2 {
+        font-family: Karla;
+        font-weight: bolder;
+        font-size: 25px;
+        letter-spacing: -0.5px;
+
+    }
+
+    & p {
+        font-family: Karla;
+        padding-block: 10px;
+    }
+
+    & button {
+        border: none;
+        padding-inline: 15px;
+        padding-block: 10px;
+        border-radius: 30px;
+        font-family: Karla;
+        font-weight: bold;
+        color: white;
+        background-color: #1D9BF0;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+    }
 }
+.boxR button:hover {
+    background-color: #1879b9;
+}
+.first {
+    margin-top: 90px;
+}
+

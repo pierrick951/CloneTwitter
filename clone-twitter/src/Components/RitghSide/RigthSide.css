@@ -1,13 +1,18 @@
-.WrapedContainer{
+.containerMain{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: auto;
-    background-color: red;
-    width: 100%;
-    margin-top: 60px;
+    position: sticky;
+
+    top: 0;
+    width: 70%;
+    height: 100vh;
+
+    
 }
-.containerR{
-    position: fixed;
-    width: 100%;
+
+.pad-block{
+    padding-bottom:20px ;
 }
+
+
+

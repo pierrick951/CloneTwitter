@@ -1,0 +1,29 @@
+.wrapHap {
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: karla;
+    width: 100%;
+
+    align-items: center;
+
+    & img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.wrapHap:hover {
+    background-color: rgba(68, 68, 68, 0.37);
+    
+}
+.WrapHaptext{
+    padding-inline: 10px;
+
+    & p {
+        color: rgb(138, 137, 137);
+    }
+}
+

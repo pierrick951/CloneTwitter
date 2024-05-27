@@ -92,3 +92,107 @@
     padding-block: 10px;
     padding-inline: 10px;
 }
+
+.showMore {
+    padding-block: 10px;
+    color: #1D9BF0;
+    width: 100%;
+}
+
+.showMore:hover {
+    background-color: rgba(73, 73, 73, 0.384);
+}
+
+
+/*Style Box3*/
+
+.bottomBox {
+    margin-top: 20px;
+}
+
+.BoxProfilFollow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & p {
+        padding-block: 2px;
+        color: rgb(138, 137, 137);
+    }
+
+    & h3 {
+        font-family: Karla;
+        padding-inline: 15px;
+        display: flex;
+        align-items: center;
+
+         & span {
+            padding-right: 5px;
+         }
+
+        & img {
+            width: 20px;
+        }
+    }
+
+}
+.ProfilPicture {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    object-fit: cover;
+}
+
+.BoxPfLeft {
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.BoxProfilRigth {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-right: 10px;
+}
+
+
+#blb{
+    width: 80px;
+    background-color: whitesmoke;
+    color: #1c1c1c;
+    
+}
+#blb:hover{
+    background-color: rgb(214, 213, 213); 
+}
+.BoxProfilFollow{
+    padding-block: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.BoxProfilFollow:hover{
+    background-color: rgba(73, 73, 73, 0.384);
+}
+.underBoxLinks {
+    width: 300px;
+    padding-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    & a {
+        text-decoration: none;
+        font-family: Karla;
+        padding-inline: 10px;
+        padding-block: 2px;
+        font-size: 16px;
+        color: rgb(138, 137, 137);
+    }
+}
+
+.underBoxLinks a:hover {
+    text-decoration: underline;
+    
+}

@@ -49,6 +49,7 @@ export default function BoxRigth2() {
           <img src={dotR} alt="" />
         </div>
       </div>
+      <p className='showMore'>Show More</p>
     </div>
   )
 }

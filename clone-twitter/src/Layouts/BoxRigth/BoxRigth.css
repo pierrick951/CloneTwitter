@@ -3,7 +3,7 @@
     width: 300px;
     border: solid rgba(192, 192, 192, 0.562) 1px;
     padding-block: 10px;
- 
+
     margin-left: 40px;
 
     & h2 {
@@ -12,6 +12,7 @@
         font-size: 25px;
         letter-spacing: -0.5px;
         padding-inline: 15px;
+        padding-block: 5px;
 
     }
 
@@ -32,19 +33,62 @@
         background-color: #1D9BF0;
         transition: ease-in 0.2s;
         cursor: pointer;
-        margin-left:15px ;
+        margin-left: 15px;
     }
 }
+
 .boxR button:hover {
     background-color: #1879b9;
 }
+
 .first {
     margin-top: 90px;
 }
-.wrappedHappBox{
+
+.wrappedHappBox {
     padding-inline: 15px;
 }
-.wrappedHappBox:hover{
-    background-color: rgba(73, 73, 73, 0.582);    
+
+.wrappedHappBox:hover {
+    background-color: rgba(73, 73, 73, 0.582);
     width: 100%;
+}
+
+
+/*TrandingBox*/
+.trendingBox {
+    display: flex;
+    padding-block: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    & p {
+        padding-block: 4px;
+        color: rgb(138, 137, 137);
+    }
+
+    & h3 {
+        font-family: Karla;
+        padding-inline: 15px;
+    }
+}
+
+.trendingBox:hover {
+    background-color: rgba(73, 73, 73, 0.384);
+}
+
+.trendingLeftBox {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.trendingBoxRigth {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding-block: 10px;
+    padding-inline: 10px;
 }

@@ -1,11 +1,13 @@
 import HappBox from '../../Layouts/HapBox/Hapbox'
-import './BoxRigth.css' 
+import './BoxRigth.css'
 
 export default function BoxRigth2() {
   return (
     <div className='boxR '>
-             <h2 className='headingBox2'>What's happenning</h2>
-             <HappBox/>
+      <h2 className='headingBox2'>What's happenning</h2>
+      <div className="wrappedHappBox">
+        <HappBox />
+      </div>
     </div>
   )
 }

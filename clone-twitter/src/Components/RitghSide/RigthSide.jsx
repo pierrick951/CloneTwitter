@@ -6,7 +6,7 @@ import SearchBar from '../../Components/SearchBar/SearchBar'
 
 export default function RigthSide() {
   return (
-    <div className='containerMain'>
+    <div className='containerMain padLine'>
       <div className='containerR'>
         <SearchBar/>
       </div>

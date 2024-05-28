@@ -62,6 +62,7 @@ nav {
 
 /*style box userprofile*/
 .containerbotav {
+    
     display: flex;
     align-items: center;
     flex-direction: row;

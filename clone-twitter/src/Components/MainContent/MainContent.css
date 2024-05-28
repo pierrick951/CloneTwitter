@@ -1,0 +1,27 @@
+.GlassyBox {
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+.topGlassy{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-block: 10px;
+    margin-left: 10px;
+ 
+    
+    & img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+}

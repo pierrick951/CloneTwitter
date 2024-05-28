@@ -1,0 +1,91 @@
+/* GlassyBox */
+.GlassyBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 252, 252, 0.062);
+    box-shadow: 0 8px 32px 0 rgba(25, 25, 31, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-bottom: 0.5px solid rgb(70, 70, 70);
+    padding: 10px 0;
+}
+
+
+/* Logo and other images */
+.logo, .profilPic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* ProfilPic */
+
+
+/* TopGlassy */
+.topGlassy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 10px;
+    width: 100%;
+    
+}
+
+/* TabsGlassy */
+.TabsGlassy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Karla, sans-serif;
+}
+
+/* BoxText */
+.boxText {
+    display: flex;
+    width: 100%;
+    max-width: 460px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ForYouBox and FollowBox */
+.ForYouBox, .FollowBox {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px 0;
+}
+.ForYouBox:hover,.FollowBox:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+/* CogBox */
+.cogBox {
+    width: 10%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.cogBox:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+/* Responsive */
+@media (min-width: 464px) {
+    .topGlassy {
+        display: none;
+    }
+}
+
+@media (max-width: 464px) {
+    .topGlassy {
+        display: flex;
+    }
+    .cogBox {
+        display: none;
+    }
+}

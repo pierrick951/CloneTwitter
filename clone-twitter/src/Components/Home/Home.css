@@ -15,7 +15,9 @@
 }
 
 .two {
-    background-color: red;
+    /* background-color: red; */
+    border-left: 0.5px solid rgb(70, 70, 70);
+    border-right: 0.5px solid rgb(70, 70, 70);
     width: 600px;
     height: 5000vh;
     overflow-y: auto;
@@ -44,5 +46,6 @@
     }
     .two {
         width: 100%;
+        border: none;
     }
 }

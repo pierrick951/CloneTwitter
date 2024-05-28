@@ -1,0 +1,92 @@
+.boxPostMain {
+    width: 100%;
+    border-bottom: 1px solid rgba(131, 130, 130, 0.589) ;
+    padding-bottom: 10px;
+}
+
+.containBox {
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 20px;
+
+    & textarea {
+        width: 100%;
+        height: 30px;
+        resize: none;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-family: Karla;
+        font-size: 20px;
+        color: white;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+}
+
+.PicImg {
+    & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+    }
+}
+
+.topboxx {
+    padding-inline: 50px;
+    padding-block: 5px;
+    margin-left: 15px;
+
+    & p {
+        display: flex;
+        align-items: center;
+        font-family: Karla;
+        font-size: 16px;
+        color: #1D9BF0;
+
+        & img {
+            width: 20px;
+        }
+
+        & span {
+            padding-left: 5px;
+        }
+    }
+}
+
+.Bottompost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+@media(max-width:760px) {
+    .boxPostMain {
+        display: none;
+    }
+}
+
+.BoxButtonPost {
+    display: flex;
+    justify-content: end;
+    width: 30%;
+
+
+    & button {
+       
+        border: none;
+        background:  #1D9BF0;
+        color:  #ffffff;
+        padding-inline: 8px;
+        border-radius: 15px;
+        padding-block: 10px;
+        padding-inline: 10px;
+    }
+}
+.Boxico {
+    margin-left: 20px;
+}

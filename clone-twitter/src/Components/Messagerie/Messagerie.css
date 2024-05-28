@@ -1,0 +1,51 @@
+.MainCointainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 50%;
+}
+
+.one {
+     display: flex;
+     justify-content: end;
+
+}
+
+.two {
+    /* background-color: red; */
+    border-left: 0.5px solid rgb(70, 70, 70);
+    border-right: 0.5px solid rgb(70, 70, 70);
+    width: 600px;
+    height: 5000vh;
+    overflow-y: auto;
+}
+
+.three {
+    position: relative;
+}
+
+
+@media (max-width:768px){
+    .three{
+        display: none;
+    }
+    .two {
+        width: 80%;
+    }
+    .one {
+        width: 20%;
+    }
+}
+
+@media (max-width:470px){
+    .one {
+        display: none;
+    }
+    .two {
+        width: 100%;
+        border: none;
+    }
+}

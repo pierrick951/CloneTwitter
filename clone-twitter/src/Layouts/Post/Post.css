@@ -81,9 +81,10 @@ li{
     display :flex;
     flex-direction: row;
     width: 100%;
+    padding-block: 5px;
 }
 .icoFlex{
-    background-color: red;
+
     width: 100%;
 }
 .SaveBox{
@@ -100,8 +101,28 @@ li{
     width: 20px;
 }
 
+.icoFlex {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    font-family: Karla;
+    color: #6b6a6a;
+    font-size: 16px;
+
+    & span {
+        padding-left:3px;
+    }
+}
 @media(max-width:725px){
     .SaveBox {
-        width: 30%;
+        width: 15%;
     }
+   .Book{
+    display: none;
+   }
 }

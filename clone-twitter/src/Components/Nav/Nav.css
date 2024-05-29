@@ -1,6 +1,5 @@
-/* style Global de la nav */
 nav {
-    display: flex;
+   display: flex;
     flex-direction: column;
     height: 100vh;
     position: fixed;
@@ -11,7 +10,6 @@ nav {
     justify-content: space-between;
 }
 
-/* Style du logo  */
 
 .containerHeader_img {
     width: 25px;
@@ -30,13 +28,18 @@ nav {
     text-decoration: none;
 }
 
-/* Style pour les Links */
 .navLinks__link {
+ 
     text-decoration: none;
     font-size: 16px;
 }
+.navLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
 
-/*button*/
 .buttonPost {
     margin-top: 10px;
     background-color: #1D9BF0;
@@ -60,7 +63,6 @@ nav {
 }
 
 
-/*style box userprofile*/
 .containerbotav {
     
     display: flex;

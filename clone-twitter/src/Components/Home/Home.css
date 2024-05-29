@@ -15,9 +15,10 @@
 }
 
 .two {
-    /* background-color: red; */
     border-left: 0.5px solid rgb(70, 70, 70);
     border-right: 0.5px solid rgb(70, 70, 70);
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
     width: 600px;
     height: auto;
   

@@ -3,9 +3,23 @@ import close from '../../assets/close.svg'
 import japan from '../../assets/japan.jpg'
 import earth from '../../assets/earth.svg'
 import ModalIcoPost from '../../Layouts/ModalIcoPost/ModalIcoPost'
+import { useDispatch } from 'react-redux';
+import { addTweet} from '../../script/tweetSlice';
+import { useState } from 'react'
 
 
 export default function ModalPost({ closemodal }) {
+
+  const [tweet,setTweet] =useState('');
+  const dispatch = useDispatch()
+
+  function handlePost(){
+    if (tweet.trim()){
+      dispatch(addTweet(tweet));
+      setTweet('');
+      closemodal();
+    }
+  }
   return (
     <div
       onClick={closemodal}
@@ -32,6 +46,8 @@ export default function ModalPost({ closemodal }) {
           <textarea
             placeholder="What's happening?"
             className="postTextarea"
+            value={tweet}
+            onChange={e => setTweet(e.target.value)}
           />
         </div>
         <div className="modalCardbot">
@@ -43,7 +59,9 @@ export default function ModalPost({ closemodal }) {
           </div>
           <div className='botbox'>
             <ModalIcoPost/>
-            <button>Post</button>
+            <button
+            onClick={(() => handlePost())}
+            >Post</button>
           </div>
           
         </div>

@@ -3,9 +3,14 @@ import earth from '../../assets/earth.svg'
 import ModalIcoPost from '../ModalIcoPost/ModalIcoPost'
 import './MainPost.css'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { addTweet } from '../../script/tweetSlice'
 
 export default function MainPost() {
-    const [showText, setShowtext] = useState(false)
+    const [showText, setShowtext] = useState(false);
+    const [tweet, setTweet] = useState('');
+    const dispatch = useDispatch();
+  
 
     function Showtext() {
 
@@ -16,6 +21,13 @@ export default function MainPost() {
             setShowtext(false)
         )
     }
+
+    function handlePost(){
+        if (tweet.trim()){
+          dispatch(addTweet(tweet));
+          setTweet('');
+        }
+      }
     return (
 
         <div className='boxPostMain'>
@@ -30,6 +42,8 @@ export default function MainPost() {
                     onClick={() => Showtext()}
                     placeholder="What's happening?!"
                     className="postTextarea"
+                    value={tweet}
+                    onChange={e => setTweet(e.target.value)}
                 />
             </div>
             <div className="modalCardbot">
@@ -46,7 +60,9 @@ export default function MainPost() {
                     <ModalIcoPost />
                 </div>
                 <div className='BoxButtonPost'>
-                    <button>
+                    <button
+                     onClick={(() => handlePost())}
+                    >
                         Post
                     </button>
                 </div>

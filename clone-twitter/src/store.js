@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import postReducer from '../src/script/post'; 
+import tweetReducer from './script/tweetSlice'; 
 
 export const store = configureStore({
     reducer: {
-        post: postReducer,
+        tweet: tweetReducer,
     },
 });

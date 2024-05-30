@@ -11,7 +11,7 @@ export default function Home() {
                 <Nav />
             </div>
             <div className="container two">
-            <UserContent/>
+              <UserContent/>
             </div>
             <div className="container three">
                 <RigthSide />

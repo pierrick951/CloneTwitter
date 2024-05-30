@@ -1,10 +1,11 @@
-import React from 'react';
+
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 import './UserContent.css';
 import japan from '../../assets/japan.jpg'
 import dot from '../../assets/dotR.svg'
-import { Heart, Bookmark, ArrowDownToLine, Repeat2, MessageCircle, BarChart2 } from 'lucide-react';
+import { Heart, Bookmark, ArrowDownToLine, Repeat2, MessageCircle, BarChart2,ArrowLeft } from 'lucide-react';
 
 
 
@@ -12,8 +13,25 @@ export default function UserContent() {
 
 
   const tweets = useSelector((state) => state.tweet.tweets)
+
+
+
+
   return (
     <div className='content'>
+      <div className="topNav">
+        <div className="linkToHome">
+          <a href="/">
+          <ArrowLeft color="#fcf7f7" />
+          </a>
+        </div>
+        <div className='topNavName'>
+          <h3>Etuve</h3>
+          <p> 0 post</p>
+        </div>
+      </div>
+      <img  className="banniere"src="https://i.redd.it/6uoazfklyo7b1.jpg" alt="" />
+
 
       {tweets.map((tweet, index) => (
         <div key={index} className="tweet">

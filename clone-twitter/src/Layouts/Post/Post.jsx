@@ -40,7 +40,7 @@ export default function Post({ body, userId }) {
             <div className="BoxContentPost">
                 <div className="TopContentPost">
                     <div className="topLeftPost">
-                        <h4>Cat{userId}</h4>
+                        <h4>{userId}</h4>
                         <p>@user{userId}</p>
                     </div>
                     <div className='toprigthPost'>

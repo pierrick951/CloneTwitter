@@ -31,7 +31,7 @@ export default function UserContent() {
         </div>
       </div>
       <img  className="banniere"src="https://i.redd.it/6uoazfklyo7b1.jpg" alt="" />
-
+      <p>p</p>
 
       {tweets.map((tweet, index) => (
         <div key={index} className="tweet">

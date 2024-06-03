@@ -26,6 +26,7 @@
 
 .three {
     position: relative;
+    width: auto;
 }
 
 
@@ -37,7 +38,7 @@
         width: 80%;
     }
     .one {
-        width: 20%;
+        width: auto;
     }
 }
 

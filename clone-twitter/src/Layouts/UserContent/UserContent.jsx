@@ -1,9 +1,11 @@
 
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
+import japan from '../../assets/japan.jpg'
+import { CalendarDays} from 'lucide-react';
 
 import './UserContent.css';
-import japan from '../../assets/japan.jpg'
+
 import dot from '../../assets/dotR.svg'
 import { Heart, Bookmark, ArrowDownToLine, Repeat2, MessageCircle, BarChart2,ArrowLeft } from 'lucide-react';
 
@@ -30,8 +32,39 @@ export default function UserContent() {
           <p> 0 post</p>
         </div>
       </div>
-      <img  className="banniere"src="https://i.redd.it/6uoazfklyo7b1.jpg" alt="" />
-      <p>p</p>
+      <img  className="banniere"src="https://cdn.pixabay.com/photo/2020/01/07/13/01/banner-4747537_1280.jpg" alt="" />
+      <div className="boxProfilFollow">
+        <div className="blackBack"><img src={japan} alt="" /></div>
+        <button>
+          Edit Profil
+        </button>
+      </div>
+      <div className="boxInfo">
+        <h3>Pierro</h3>
+        <p className='idText'>@Etuve.js</p>
+        <p className='infoCalendar'>
+        <CalendarDays  className='calendarIco' color="#747373" />
+        <span>Joined November 2023</span>
+        </p>
+        <div className="boxFollow">
+          <p className='infoProfil'>
+          10
+            <span>Following</span>
+          </p>
+          <p className='infoProfil'>
+           0
+            <span>Followers</span>
+          </p>
+        </div>
+        <div className="boxTabsProfil">
+          <p>Post</p>
+          <p>Replies</p>
+          <p>Highlights</p>
+          <p>Articles</p>
+          <p>Media</p>
+          <p>Likes</p>
+        </div>
+      </div>
 
       {tweets.map((tweet, index) => (
         <div key={index} className="tweet">

@@ -1,22 +1,24 @@
 
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
+import { useSelector,useDispatch } from 'react-redux';
+import { removeTweet } from '../../script/tweetSlice';
 import japan from '../../assets/japan.jpg'
 import { CalendarDays} from 'lucide-react';
 
 import './UserContent.css';
 
-import dot from '../../assets/dotR.svg'
-import { Heart, Bookmark, ArrowDownToLine, Repeat2, MessageCircle, BarChart2,ArrowLeft } from 'lucide-react';
+
+import { Heart, Bookmark, ArrowDownToLine, Repeat2, MessageCircle, BarChart2,ArrowLeft, GripHorizontal} from 'lucide-react';
 
 
 
 export default function UserContent() {
 
-
+  const dispatch = useDispatch()
   const tweets = useSelector((state) => state.tweet.tweets)
 
-
+function removePost(id){
+  dispatch(removeTweet(id))
+}
 
 
   return (
@@ -66,8 +68,8 @@ export default function UserContent() {
         </div>
       </div>
 
-      {tweets.map((tweet, index) => (
-        <div key={index} className="tweet">
+      {tweets.map((tweet, id) => (
+        <div key={id} className="tweet">
           <div className='boxProfilPost'>
             <img src={japan} alt="" />
           </div>
@@ -78,11 +80,16 @@ export default function UserContent() {
                 <p>@etuveBg</p>
               </div>
               <div className='toprigthPost'>
-                <img src={dot} alt="" />
+                <button className='button-delete
+              '
+              onClick={() => removePost(tweet.id)}
+              >
+                <GripHorizontal color="#626161" />
+                </button>
               </div>
             </div>
             <div className="postContent">
-              <p>{tweet}</p>
+              <p>{tweet.id}</p>
             </div>
             <div className='icoPost'>
               <div className='icoFlex'>

@@ -251,7 +251,10 @@
     transform: scaleX(0);
    
 }
-
+.button-delete{
+    background: transparent;
+    border:none;
+}
 @media(max-width:725px) {
     .SaveBox {
         width: 15%;

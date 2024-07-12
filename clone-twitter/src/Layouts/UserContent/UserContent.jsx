@@ -1,8 +1,9 @@
 
 import { useSelector,useDispatch } from 'react-redux';
-import { removeTweet } from '../../script/tweetSlice';
+
 import japan from '../../assets/japan.jpg'
 import { CalendarDays} from 'lucide-react';
+import {  removeTweet, toggleLike } from '../../script/tweetSlice';
 
 import './UserContent.css';
 
@@ -15,6 +16,9 @@ export default function UserContent() {
 
   const dispatch = useDispatch()
   const tweets = useSelector((state) => state.tweet.tweets)
+  const handleToggleLike = (id) => {
+    dispatch(toggleLike(id));
+};
 
 function removePost(id){
   dispatch(removeTweet(id))
@@ -101,12 +105,14 @@ function removePost(id){
                   <Repeat2 color="#64686d" className='ico ' />
                   <span>0</span>
                 </p>
-                <p className="stats"
+                <button className="stats buttonlike"
+                onClick={()=> handleToggleLike(tweet.id)}>
+                 
 
-                >
-                  <Heart className='ico' color="#64686d" />
-                  <span>0</span>
-                </p>
+                    {tweet.like === 0 ? ( <Heart className='ico' color="#FF0000" />): ( <Heart className='ico' color="#64686d" />)}
+                    {tweet.like === 0 ? '1' : '0'}
+               
+                </button>
                 <p className='stats'>
                   <BarChart2 className='ico' color="#64686d" />
                   <span>0</span>

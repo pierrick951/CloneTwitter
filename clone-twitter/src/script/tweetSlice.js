@@ -16,9 +16,15 @@ const tweetSlice = createSlice({
         },
         removeTweet: (state, action) => {
             state.tweets = state.tweets.filter(tweet => tweet.id !== action.payload)
+        },
+        toggleLike: (state, action) => {
+            const tweet = state.tweets.find(tweet => tweet.id === action.payload);
+            if (tweet) {
+                tweet.like = tweet.like === 0 ? 1 : 0;
+            }
         }
     }
 });
 
-export const { addTweet, removeTweet } = tweetSlice.actions;
+export const { addTweet, removeTweet, toggleLike } = tweetSlice.actions;
 export default tweetSlice.reducer;

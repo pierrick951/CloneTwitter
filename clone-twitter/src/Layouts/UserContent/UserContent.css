@@ -112,6 +112,8 @@
     font-family: Karla;
     color: #6b6a6a;
     font-size: 16px;
+    background: transparent;
+    border: none;
 
     & span {
         padding-left: 3px;
@@ -255,6 +257,7 @@
     background: transparent;
     border:none;
 }
+
 @media(max-width:725px) {
     .SaveBox {
         width: 15%;

@@ -6,6 +6,7 @@ import './Post.css';
 
 export default function Post({ body, userId }) {
     const [catImage, setCatImage] = useState(null);
+    const [active, setActive] = useState(false);
     const [like, SetLiked] = useState(0)
 
     function Liked() {
